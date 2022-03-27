@@ -1,26 +1,53 @@
 package Lab_10;
 /*@author Somit Jain*/
 import java.util.*;
-public class HashMap_L10 {
-    public static void main(String[] args) {
-        System.out.println("20BDS0181 Somit Jain");
-        System.out.println("Enter n values for student-subjects: ");
-        Scanner in = new Scanner(System.in);
-        int n = in.nextInt();
-        int i,j;
-        HashMap<String,String[]> h1 = new HashMap<String, String[]>();
-        for(i=0;i<n;i++){
-            System.out.println("Enter number of subjects:");
-            int num = in.nextInt();
-            String[] str = new String[num];
-            if(num<3)
-                for(j=0;j<num;j++){
-                    str[j] = in.next();
-                }
-            System.out.println("Enter name:");
-            String name = in.next();
-            h1.put(name, str);
-        }
-        System.out.println(h1.values());
-    }
+public class HashMap_L10{
+	public static void main(String[] args) {
+		HashMap<String,ArrayList<String>> m1 = new HashMap<>();
+		Scanner input = new Scanner(System.in);
+		for(int i=0;i<3;i++){
+			System.out.println("Enter the student name");
+			String name = input.next();
+			System.out.println("Enter the number of subjects");
+			int n = input.nextInt();
+			ArrayList<String> a = new ArrayList<>();
+			for(int j=0;j<n;j++) {
+				String s = input.next();
+				a.add(s);
+			}
+			m1.put(name, a);
+		}
+		HashMap<String,String> m2 = new HashMap<String,String>();
+		for(int i=0;i<4;i++){
+			System.out.println("Enter the subject name");
+			String subject = input.next();
+			System.out.println("Enter the teacher name");
+			String teacher = input.next();
+			m2.put(subject, teacher);
+		}
+		for(Map.Entry<String, ArrayList<String>> j:m1.entrySet()){
+			System.out.println(j.getKey() + ":" + j.getValue());
+		}
+		System.out.println();
+		for(Map.Entry<String, String> j:m2.entrySet()){
+			System.out.println(j.getKey() + ":" + j.getValue());
+		}
+		System.out.println();
+		String s = "C";
+		String s1[] = new String[4];
+		ArrayList<String> subjects = new ArrayList<String>();
+		for(Map.Entry<String, ArrayList<String>> j:m1.entrySet()) {
+			if(j.getKey().equals(s)){
+				subjects = (ArrayList<String>)j.getValue().clone();
+			}
+		}
+		subjects.toArray(s1);
+		for(int k = 0;k<s1.length;k++){
+			for(Map.Entry<String,String> j:m2.entrySet()){
+				if(j.getKey().equals(s1[k])){
+					System.out.println(j.getValue());
+				}
+			}
+		}
+	}
 }
