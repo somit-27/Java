@@ -25,6 +25,7 @@ class Account extends Customer implements Bank{
     void interest(){
         System.out.println("Interest: "+bal*roi*year/100);
     }
+    @Override
     public void show() {
         System.out.println("Account Number"+ accNo);
         System.out.println("Account Balance: "+bal);

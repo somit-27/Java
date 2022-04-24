@@ -21,6 +21,7 @@ class Stat{
 public class stationary_L8 {
     public static void main(String[] args){
         Scanner in = new Scanner(System.in);
+        System.out.println("20BDS0181 Somit");
         int[] costs = {15,5,6,30,10};
         String[] it = {"Pen","Pencil","Eraser","Sketch","Paper"};
         Stat s1 = new Stat(it,costs);

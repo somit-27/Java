@@ -1,6 +1,4 @@
-
 package Lab_4;
-
 import java.util.Scanner;
 /* @author Somit Jain*/
 class course{

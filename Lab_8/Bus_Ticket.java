@@ -41,10 +41,7 @@ public class Bus_Ticket {
                     b1.Register_Seats();
                     System.out.println("A seat has been registered by t1");
                 }
-            } catch (InterruptedException ex) {
-                Logger.getLogger(Bus_Ticket.class.getName()).log(Level.SEVERE, null, ex);
-            }
-            
+            } catch (InterruptedException ex) {}
            System.out.println(Thread.currentThread().getId());
         });
         Thread t2 = new Thread(()->{

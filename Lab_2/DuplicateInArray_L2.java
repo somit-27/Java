@@ -1,15 +1,6 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Lab_2;
 import java.util.Scanner;
-
-/**
- *
- * @author Somit Jain
- */
+/*@author Somit Jain*/
 public class DuplicateInArray_L2 {
     public static void main(String[] args){
         System.out.println("20BDS0181 Somit Jain");

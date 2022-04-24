@@ -1,10 +1,7 @@
 package Lab_9;
  import java.io.*;
-/**
- *
- * @author Somit Jain
- */
-public class alphabet_L9 {
+/*@author Somit Jain*/
+public class alphabet_L9{
     public static void main(String[] args) throws FileNotFoundException, IOException {
          System.out.println("20BDS0181 Somit Jain");
         try (FileWriter f = new FileWriter("C:\\Users\\Somit Jain\\Documents\\NetBeansProjects\\Java_VIT\\src\\Lab_9\\filefile.txt")) {

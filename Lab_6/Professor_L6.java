@@ -1,7 +1,5 @@
 package Lab_6;
-
 import java.util.Scanner;
-
 /*@author Somit Jain*/
 class marks extends Exception{
     marks(String msg){

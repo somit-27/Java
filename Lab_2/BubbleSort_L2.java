@@ -1,9 +1,6 @@
 package Lab_2;
 import java.util.Scanner;
-/**
- *
- * @author Somit Jain
- */
+/*@author Somit Jain*/
 public class BubbleSort_L2 {
     public static void main(String[] args){
         System.out.println("20BDS0181 Somit Jain");

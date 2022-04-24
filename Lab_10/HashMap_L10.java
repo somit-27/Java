@@ -5,7 +5,8 @@ public class HashMap_L10{
 	public static void main(String[] args) {
 		HashMap<String,ArrayList<String>> m1 = new HashMap<>();
 		Scanner input = new Scanner(System.in);
-		for(int i=0;i<3;i++){
+                System.out.println("20BDS0181 Somit Jain");
+		for(int i=0;i<2;i++){
 			System.out.println("Enter the student name");
 			String name = input.next();
 			System.out.println("Enter the number of subjects");
@@ -18,7 +19,7 @@ public class HashMap_L10{
 			m1.put(name, a);
 		}
 		HashMap<String,String> m2 = new HashMap<String,String>();
-		for(int i=0;i<4;i++){
+		for(int i=0;i<3;i++){
 			System.out.println("Enter the subject name");
 			String subject = input.next();
 			System.out.println("Enter the teacher name");

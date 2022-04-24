@@ -1,19 +1,12 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Lab_5;
-
 import java.util.Scanner;
-
 /* @author Somit Jain*/
 abstract class shape{
-	double volume;
-	public abstract void compute_volume();
-	public void show_volume() {
-            System.out.println("Volume: "+volume);
-	}
+    double volume;
+    public abstract void compute_volume();
+    public void show_volume() {
+        System.out.println("Volume: "+volume);
+    }
 }
 class sphere extends shape{
 	double radius;
